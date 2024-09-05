@@ -6,7 +6,9 @@ Textual的命令行指令和texual名字一样。“textual”指令在你开发
 
 麻烦您花一些时间查看textual可用的字命令，它在之后会很有用的。
 
+'''
 textual --help
+'''
 
 ## 运行
 
