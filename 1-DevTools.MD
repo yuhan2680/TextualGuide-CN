@@ -106,8 +106,7 @@ textual console
 
 您应该会看到Textual开发工具的欢迎消息：
 
-【图片】
-https://textual.textualize.io/guide/devtools/#console
+![Welcome Message](https://github.com/yuhan2680/TextualGuide-CN/blob/main/WelcomeMessage.jpeg)
 
 在另一个控制台，在`textual run`的`--dev`状态下运行你的应用：
 
