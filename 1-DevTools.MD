@@ -2,7 +2,7 @@
 
 此教程翻译自Textual官方指南（https://textual.textualize.io/guide/devtools/#console）
 
-Textual的命令行指令和texual名字一样。“textual”指令在你开发工具时非常好用。
+Textual的命令行指令和texual名字一样。`textual`指令在你开发工具时非常好用。
 
 麻烦您花一些时间查看textual可用的字命令，它在之后会很有用的。
 
@@ -12,27 +12,27 @@ textual --help
 
 ## 运行
 
-run指令可以运行textual应用，提供一个python文件路径它就会执行该应用
+`run`指令可以运行textual应用，提供一个python文件路径它就会执行该应用
 
 ```
 textual run my_app.py
 ```
 
-上述命令等同于直接执行my_app.py，不过在用命令运行时可以开启或关闭一些功能来debug你的程序，比如 --dev 可以激活控制台
+上述命令等同于直接执行my_app.py，不过在用命令运行时可以开启或关闭一些功能来debug你的程序，比如`--dev`可以激活控制台
 
-可以通过run指令的help来查看具体细节
+可以通过`run`指令的`help`来查看具体细节
 
 ```
 textual run --help
 ```
 
-你可以通过python import来运行Textual应用，下述命令可以导入music.play病用Textual模块运行：
+你可以通过python import来运行Textual应用，下述命令可以导入`music.play`并用Textual模块运行：
 
 ```
 textual run music.play
 ```
 
-假设music.play中有一个Textual app实例，如果该app有了不同的名字，您可以将其添加在冒号之后：
+假设`music.play`中有一个Textual app实例，如果该app有了不同的名字，您可以将其添加在冒号之后：
 
 ```
 textual run music.play:MusicPlayerApp
@@ -40,7 +40,7 @@ textual run music.play:MusicPlayerApp
 
 ## 通过命令运行
 
-如果您是通过命令行脚本安装的app，您可以通过 -c 运行它。例如以下指令将会运行textual colors命令：
+如果您是通过命令行脚本安装的app，您可以通过`-c`运行它。例如以下指令将会运行textual colors命令：
 
 ```
 textual run -c textual colors
@@ -84,7 +84,7 @@ textual serve -h
 
 ## 实时编辑
 
-如果您用 --dev 执行程序，app将会已开发模式运行
+如果您用`--dev`执行程序，app将会已开发模式运行
 
 ```
 textual run --dev my_app.py
@@ -109,7 +109,7 @@ textual console
 【图片】
 https://textual.textualize.io/guide/devtools/#console
 
-在另一个控制台，在 textual run 的 --dev 状态下运行你的应用：
+在另一个控制台，在`textual run`的`--dev`状态下运行你的应用：
 
 ```
 textual run --dev my_app.py
@@ -119,7 +119,7 @@ textual run --dev my_app.py
 
 ## 增长冗余
 
-Textual会将特定事件写入日志消息，比如说用户按下按钮或者点击终端。位避免生成过多信息，有些时间会被标记为“冗余的”而不被记入。如果您想看到该部分日志消息，您可以添加 -v 开关
+Textual会将特定事件写入日志消息，比如说用户按下按钮或者点击终端。位避免生成过多信息，有些时间会被标记为“冗余的”而不被记入。如果您想看到该部分日志消息，您可以添加`-v`开关
 
 ```
 textual console -v
@@ -127,7 +127,7 @@ textual console -v
 
 ## 减少冗余
 
-日志信息被分类到了不同组里面， -x 标记可以排除一个组里的所有信息（即不记录那些信息）。这些组分别为：EVENT, DEBUG, INFO, WARNING, ERROR, PRINT, SYSTEM, LOGGING 及 WORKER。消息组将在时间戳之后打印出来。
+日志信息被分类到了不同组里面，`-x`标记可以排除一个组里的所有信息（即不记录那些信息）。这些组分别为：EVENT, DEBUG, INFO, WARNING, ERROR, PRINT, SYSTEM, LOGGING 及 WORKER。消息组将在时间戳之后打印出来。
 
 您可以排除掉多个组。如果您只想保留warning、errors和print报告的话，可以运行以下指令：
 
@@ -137,13 +137,13 @@ textual console -x SYSTEM -x EVENT -x DEBUG -x INFO
 
 ## 自定义端口
 
-您可以通过 --port 选项来指定控制台的运行端口。在有其他Textual软件在默认端口运行时，自定义端口就能派上用场了：
+您可以通过`--port`选项来指定控制台的运行端口。在有其他Textual软件在默认端口运行时，自定义端口就能派上用场了：
 
 ```
 textual console --port 7342
 ```
 
-之后用命令中的 --port 选项让其运行在同一个端口上：
+之后用命令中的`--port`选项让其运行在同一个端口上：
 
 ```
 textual run --dev --port 7342 my_app.py
@@ -175,14 +175,12 @@ def on_mount(self) -> None:
 
 ## Log 方法
 
-There's a convenient shortcut to log on the App and Widget objects. This is useful in event handlers. Here's an example:
-有一个很方便的可以登录app和小部件对象多快捷方法，在事件处理程序
+有一个很方便的可以登录app和小部件对象的快捷方法，在事件处理程序时很有用，以下是一个例子：
 
 ```
 from textual.app import App
-```
 
-```
+
 class LogApp(App):
 
 
