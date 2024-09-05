@@ -10,7 +10,7 @@
 
 此指南中绝大多数代码都是可以正常运作的—你可以直接复制粘贴过去
 
-不过在Textual的GitHub库（https://github.com/Textualize/textual）上导航到docs/examples/guide目录运行示例可能更容易一点
+不过在Textual的[GitHub库](https://github.com/Textualize/textual)上导航到docs/examples/guide目录运行示例可能更容易一点
 
 ***
 
