@@ -1,6 +1,6 @@
 # Textual库指南1:开发工具(Devtools)
 
-此教程翻译自Textual官方指南（https://textual.textualize.io/guide/devtools/#console）
+此教程翻译自[Textual官方指南](https://textual.textualize.io/guide/devtools/#console)
 
 Textual的命令行指令和texual名字一样。`textual`指令在你开发工具时非常好用。
 
@@ -151,7 +151,7 @@ textual run --dev --port 7342 my_app.py
 
 ## Textual log
 
-用log函数可以美观地打印数据结构及其他Rich(https://rich.readthedocs.io/en/latest/)能显示的东西。
+用log函数可以美观地打印数据结构及其他[Rich](https://rich.readthedocs.io/en/latest/)能显示的东西。
 
 您可以像这样导入log函数：
 
@@ -201,7 +201,7 @@ if __name__ == "__main__":
 
 ## 日志处理程序
 
-Textual有一个会经由内置日志库的内容写入devtools（开发工具）的日志处理程序(https://textual.textualize.io/api/logging/#textual.logging.TextualHandler)
+Textual有一个会经由内置日志库的内容写入devtools（开发工具）的[日志处理程序](https://textual.textualize.io/api/logging/#textual.logging.TextualHandler)
 
 ```
 提示🔔
